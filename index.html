@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio - [Sanvi Shetty]</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font (Tailwind default) and ensure a dark theme for high contrast -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Slate Gray */
+            color: #f3f4f6; /* Light Gray */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /* Custom hover effect for buttons/links */
+        .primary-button {
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+        }
+        .case-study-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .case-study-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 
+        HEADER & NAVIGATION 
+    -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#hero" class="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition duration-150">
+                
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#work" class="text-gray-300 hover:text-indigo-400 transition duration-150 font-medium">Work</a>
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition duration-150 font-medium">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition duration-150 font-medium">Skills</a>
+                <a href="#contact" class="px-4 py-2 bg-indigo-600 text-white rounded-lg primary-button font-semibold">Get In Touch</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) - Not fully functional in this single-file template, but included for structure -->
+            <button class="md:hidden text-gray-300 hover:text-indigo-400 focus:outline-none">
+                <!-- Icon for Menu -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            HERO SECTION 
+        -->
+        <section id="hero" class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 flex flex-col items-center text-center">
+            <div class="max-w-4xl">
+                <p class="text-indigo-400 text-lg font-semibold mb-4 uppercase tracking-widest">UI/UX Designer & Problem Solver</p>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-white">
+                    Hi, I'm <span class="text-indigo-400">Sanvi Shetty</span>, a 4th year student at Manipal Institute of Technology
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"></span>.
+                </h1>
+                <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    I am passionate about creating user-friendly websites that are intuitive and user-centered products by blending rigorous UX research with impactful visual design.
+                </p>
+                <div class="space-x-4">
+                    <a href="#work" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl primary-button text-lg inline-block shadow-lg shadow-indigo-500/50">
+                        View My Work
+                    </a>
+                    <a href="https://drive.google.com/file/d/1mq3aIYNXpWTuZ4oBRCLZMGiL_VSyJpSr/view?usp=sharing" target="_blank" class="px-8 py-3 bg-gray-700 text-gray-200 font-bold rounded-xl primary-button text-lg inline-block hover:bg-gray-600 transition duration-200">
+                        My Resume (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+            <!-- 
+        FEATURED WORK / CASE STUDIES 
+    -->
+    <section id="work" class="py-20 md:py-28 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-4">Featured Case Studies</h2>
+            <p class="text-center text-gray-400 max-w-xl mx-auto mb-16">Deep dives into the problems, processes, and validated solutions behind my best work.</p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Case Study 1: AI Loans (Provided by user) -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl case-study-card group">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-indigo-500 text-white mb-4">U/UX</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">AI Loans: Loan Management App</h3>
+                        <p class="text-gray-400 mb-4">Loan Management app with KYC, multiple language support, AI chatbot and voice assist, AI loan handling.</p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-indigo-300">Key Role & Deliverables:</p>
+                            <ul class="text-gray-400 text-sm list-disc list-inside ml-2">
+                                <li>User Research & Persona Creation</li>
+                                <li>Information Architecture</li>
+                                <li>Prototyping (Figma)</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.figma.com/make/DzzBiscH8OTVfeKhCeXsTx/AI-Loan-Underwriting-Mobile-App--Community-?node-id=0-1&p=f&t=XgzoKEfAPt9hIJua-0" target="_blank" class="inline-flex items-center text-indigo-400 font-bold hover:text-indigo-300 transition duration-150">
+                            View Figma Design
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: RecipeVault (Provided by user) -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl case-study-card group">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-pink-500 text-white mb-4">Full Stack Web Application</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">RecipeVault: Digital Recipe Book</h3>
+                        <p class="text-gray-400 mb-4">Designed a recipe book integrated with an online ingredient ordering service.</p>
+                        <div class="mb-4">
+                            <p class="text-sm font-semibold text-pink-300">Key Role & Deliverables:</p>
+                            <ul class="text-gray-400 text-sm list-disc list-inside ml-2">
+                                <li>Visual Design System Components</li>
+                                <li>Front-End</li>
+                                <li>Testing & Analysis</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/SaNvI004/recipevault" target="_blank" class="inline-flex items-center text-pink-400 font-bold hover:text-pink-300 transition duration-150">
+                            View GitHub
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        
+        <!-- 
+            CALL TO ACTION / CONTACT 
+        -->
+        <section id="contact" class="py-20 md:py-28 bg-indigo-900/50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-4">Ready to build something great?</h2>
+                <p class="text-xl text-indigo-200 mb-8">
+                    I am currently open to new product design and consulting opportunities. 
+                </p>
+                <a href="sanvishetty1804@gmail.com" target="_blank"  class="px-10 py-4 bg-white text-indigo-600 font-bold rounded-xl primary-button text-xl inline-block shadow-2xl hover:bg-gray-100 transition duration-200">
+                    Email Me Today
+                </a>
+                <p class="text-gray-300 mt-6">Email: sanvishetty1804@gmail.com</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+        FOOTER 
+    -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>&copy; 2025 [Sanvi Shetty]. All Rights Reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <!-- Replace # with actual links -->
+                <a href="https://www.linkedin.com/in/sanvi-shetty-83b325289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:text-indigo-400 transition duration-150">LinkedIn</a>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
